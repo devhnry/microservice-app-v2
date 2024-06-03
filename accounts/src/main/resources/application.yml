@@ -19,7 +19,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-    database-platform: org.hibernate.dialect.H2Dialect
   config:
     import: "configserver:http://localhost:8071/"
   rabbitmq:
