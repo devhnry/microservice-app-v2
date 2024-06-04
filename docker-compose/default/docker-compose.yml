@@ -39,8 +39,7 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      configserver:
-        condition: service_healthy
+      - configserver
     environment:
       SPRING_APPLICATION_NAME: "accounts"
     extends:

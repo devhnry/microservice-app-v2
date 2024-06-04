@@ -6,7 +6,7 @@ spring:
     name: "accounts"
   profiles:
     active:
-      - "prod"
+      - "default"
   datasource:
     username: root
     password: ''
@@ -19,13 +19,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-  config:
-    import: "configserver:http://localhost:8071/"
-  rabbitmq:
-    host: "localhost"
-    port: 5672
-    username: "guest"
-    password: "guest"
 
 management:
   endpoints:
